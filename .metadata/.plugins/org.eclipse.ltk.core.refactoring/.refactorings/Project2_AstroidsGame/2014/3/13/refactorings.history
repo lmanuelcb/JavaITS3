@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;shipAtZero&apos; in &apos;Ship&apos; to &apos;vertices&apos;&#x0A;- Original project: &apos;Project2_AstroidsGame&apos;&#x0A;- Original element: &apos;Ship.shipAtZero&apos;&#x0A;- Renamed element: &apos;Ship.vertices&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;shipAtZero&apos;" flags="589830" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{Ship.java[Ship^shipAtZero" name="vertices" references="true" setter="false" stamp="1395913681890" textual="false" version="1.0"/>
+</session>

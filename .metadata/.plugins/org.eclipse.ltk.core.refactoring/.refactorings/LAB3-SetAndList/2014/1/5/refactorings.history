@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;Books&apos; to &apos;Lab3BooksData&apos;&#x0A;- Original project: &apos;LAB3-SetAndList&apos;&#x0A;- Original element: &apos;Books&apos;&#x0A;- Renamed element: &apos;Lab3BooksData&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Books&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{Books.java[Books" matchStrategy="1" name="Lab3BooksData" qualified="false" references="true" similarDeclarations="false" stamp="1391009852027" textual="false" version="1.0"/>
+</session>

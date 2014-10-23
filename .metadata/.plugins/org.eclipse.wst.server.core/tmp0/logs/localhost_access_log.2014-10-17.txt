@@ -1,0 +1,6 @@
+127.0.0.1 - - [17/Oct/2014:06:54:19 +0100] "GET / HTTP/1.1" 404 951
+fe80:0:0:0:0:0:0:1%1 - - [17/Oct/2014:06:54:21 +0100] "GET /ITS3-LAB4CarWeb/AddCar.jsp HTTP/1.1" 200 1042
+0:0:0:0:0:0:0:1%0 - - [17/Oct/2014:06:54:58 +0100] "GET /ITS3-LAB4CarWeb/CarServlet?make=fiat&model=czxczx&year=2222&enginesize=3&fuel=petrol&price=2000&otherinfo=none HTTP/1.1" 200 322
+127.0.0.1 - - [17/Oct/2014:16:24:46 +0100] "GET / HTTP/1.1" 404 951
+0:0:0:0:0:0:0:1%0 - - [17/Oct/2014:16:24:48 +0100] "GET /ITS3-LAB4CarWeb/AddCar.jsp HTTP/1.1" 200 1042
+0:0:0:0:0:0:0:1%0 - - [17/Oct/2014:16:26:37 +0100] "GET /ITS3-LAB4CarWeb/CarServlet?make=fiat&model=Ferrary&year=2020&enginesize=7&fuel=petrol&price=1000000&otherinfo=No+time+wasters HTTP/1.1" 200 337
