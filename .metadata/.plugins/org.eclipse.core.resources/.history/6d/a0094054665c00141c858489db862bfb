@@ -1,0 +1,65 @@
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.List;
+
+/**
+ * Created by lmanuelcb on 10/25/2014.
+ */
+
+public class CarDAO extends GenericDAO<CarClass>{
+
+    @Override
+    CarClass populate(ResultSet rs) throws SQLException {
+        CarClass entity = new CarClass();
+        entity.setModel(rs.getString("model"));
+        entity.setMake(rs.getString("make"));
+        entity.setReg(rs.getString("reg"));
+        entity.setPrice(Integer.parseInt(rs.getString("price")));
+        entity.setYear(Integer.parseInt(rs.getString("year")));
+        entity.setStatus(rs.getString("status"));
+        return entity;
+    }
+
+    public void create(CarClass car){
+        String sql = "insert into cars (reg,make,model,year,price,status)values(?,?,?,?,?,?);";
+        executeUpdate(sql, new Object[]{car.getReg(),car.getMake(),car.getModel(),new Integer(car.getYear()), new Integer(car.getPrice()),car.getStatus()});
+    }
+
+    public void update(CarClass car){
+        String sql = "update cars set make=?, model=?, year=?, price=?, status=? where reg=?;";
+        executeUpdate(sql, new Object[]{car.getMake(),car.getModel(),new Integer(car.getYear()), new Integer(car.getPrice()),car.getStatus(),car.getReg()});
+    }
+
+    public void delete(CarClass car){
+        String sql = "delete from cars where reg=?;";
+        executeUpdate(sql, new Object[]{car.getReg()});
+    }
+
+    public List<CarClass> getAll(){
+        String sql = "select * from cars;";
+        return executeQuery(sql, new Object[]{});
+    }
+
+    /* public static void main(String[] args) {
+        CarClass car = new CarClass();
+
+        car.setMake("Mint");
+        car.setModel("Tips");
+        car.setPrice(23000);
+        car.setReg("11 mo 6754");
+        car.setStatus("0");
+        car.setYear(2013);
+
+        System.out.println(car);
+        
+        CarDAO dao = new CarDAO();
+        dao.create(car);
+        List<CarClass> list = dao.getAll();
+
+        for(Object obj : list){
+            CarClass car2 = (CarClass)obj;
+            System.out.println(car2);
+        }*/
+
+        }
+    }

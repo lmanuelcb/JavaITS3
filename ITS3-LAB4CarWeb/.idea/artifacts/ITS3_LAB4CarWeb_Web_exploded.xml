@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ITS3-LAB4CarWeb:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/ITS3_LAB4CarWeb_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="ITS3-LAB4CarWeb/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ITS3-LAB4CarWeb" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
